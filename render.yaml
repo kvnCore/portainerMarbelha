@@ -1,0 +1,11 @@
+# render.yaml
+services:
+  - type: web
+    name: portainer-web
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    autoDeploy: false
+    ports:
+      - port: 9443
+        protocol: tcp
